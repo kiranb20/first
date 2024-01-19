@@ -1,0 +1,19 @@
+<!-- app/views/sessions/new.html.erb -->
+<h2>Login</h2>
+
+<%= form_with(model: Login, url:login_path , local: true) do |f| %>
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.password_field :password, autocomplete: 'off' %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Log in' %>
+  </div>
+  <p><strong><%=login_path%></strong></p>
+<% end %>

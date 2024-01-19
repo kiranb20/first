@@ -1,0 +1,17 @@
+<h1>Details of the Articles</h1>
+<table>
+<thead>
+<th>title</th>
+<th>description</th>
+<th>edit</th>
+</thead>
+<tbody>
+<% @arts.each do |a| %>
+<tr>
+<td>  <%= a.title  %>  </td>
+<td> <%=  a.description  %>  </td>
+<td>edit </td>
+</tr>
+<% end %>
+</tbody>
+</table>

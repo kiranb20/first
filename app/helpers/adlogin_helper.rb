@@ -1,0 +1,2 @@
+module AdloginHelper
+end
