@@ -5,7 +5,8 @@ class LoginpageController < ApplicationController
         password=params[:password]
         @admin=Login.find_by(username:username)
         if(@admin && @admin.password==password)
-            render json: {"status": "success"}
+            token=@admin.generate_jwt
+            render json: {token: token}
         else
             render json: {"status": "failed"}
         end

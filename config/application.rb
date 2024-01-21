@@ -11,8 +11,7 @@ module First
     # Initialize configuration defaults for originally generated Rails version.
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore
-    config.secret_key_base ="e28bb23a422d8daa4ad2d346fdb0d4e40fa64eb8d22e60ae71a8cf0ec5ccfb05c56e7409c73b3226e412621e1db5f84059f5a66a664f457252522977b37f0f82"
-
+    
     config.load_defaults 6.0
     require_relative 'boot'
 
